@@ -36,6 +36,7 @@
                     extend: {
                         colors: {
                             customGreen: "rgb(180, 244, 97)",
+                            customGray: "rgb(249, 247, 243)",
                         },
                     },
                 },
@@ -44,10 +45,49 @@
     </head>
 
     <body class="font-lexend">
+        <header class="sticky top-0 z-50 bg-white bg-opacity-90 w-full mb-1">
+            <nav class="bg-customGray border lg:h-24 m-auto w-full">
+                <div
+                    class="navbar lg:w-10/12 pt-3 mx-auto flex flex-col lg:flex-row lg:justify-between gap-1"
+                >
+                    <div class="lg:navbar-start">
+                        <a
+                            id="blog-btn"
+                            class="btn border py-2 px-4 w-32 bg-customGreen"
+                            href="./blog.html"
+                        >
+                            Blog
+                        </a>
+                    </div>
+                    <div class="navbar-center p-1">
+                        <a class="btn btn-ghost text-lg"
+                            ><img src="./assets/logo.png" alt="" />Donate
+                            Bangladesh</a
+                        >
+                    </div>
+                    <div class="lg:navbar-end gap-1">
+                        <img src="./assets/coin.png" alt="" />
+                        <h4 id="total-amount">7500</h4>
+                        <p>BDT</p>
+                    </div>
+                </div>
+            </nav>
 
-
-
-
-
+            <!-- donate and history button  -->
+            <div class="mt-6 mb-4 flex justify-center items-center gap-6">
+                <button
+                    id="donate-btn"
+                    class="btn border px-8 font-semibold border-slate-300 bg-customGreen"
+                >
+                    Donate
+                </button>
+                <button
+                    id="history-btn"
+                    class="btn border px-8 font-semibold border-slate-300"
+                >
+                    History
+                </button>
+            </div>
+        </header>
     </body>
 </html>
